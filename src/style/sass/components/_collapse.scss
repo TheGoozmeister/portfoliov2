@@ -1,0 +1,29 @@
+.collapse {
+    width: 35%;
+    &__header {
+        background-color: $pink;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            @include mainFont;
+        }
+        &__icon {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+    &__main {
+        &__image {
+
+        }
+        &__text {
+            @include textFont;
+            color: $white;
+            background-color: $purple;
+        }
+    }
+}

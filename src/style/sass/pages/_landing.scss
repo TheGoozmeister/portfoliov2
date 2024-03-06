@@ -1,0 +1,52 @@
+.landing {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        &__presentation {
+            width: 90%;
+            margin: auto;
+            &__text{
+                @include mainFont;
+                color: $white;
+                text-align: justify;
+                width: 20%;
+            }
+            &__button {
+                width: 20%;
+            }
+        }
+    }
+    &__setup {
+        background-color: $purple;
+        opacity: 90%;
+        border-radius: 10px;
+        border: 1px solid $yellow;
+        &__label {
+            @include mainFont;
+            color: white;
+        }
+        &__flags {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+
+h1 {
+    color: $white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 190px;
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+.presentationText__2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

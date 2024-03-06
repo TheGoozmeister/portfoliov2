@@ -1,0 +1,46 @@
+.project {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $purple;
+    padding: 0px 10px 20px 10px;
+    border-radius: 20px;
+    &__image {
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        border-radius: 20px;
+        overflow: hidden;
+        & img {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        color: $white;
+        @include titleFont;
+        padding-top: 5px;
+    }
+    &__infos {
+        width: 90%;
+        height: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        @include mainFont;
+        &__summary {
+            color: $white;
+        }
+        &__technos {
+            color: $yellow;
+        }
+    }
+}

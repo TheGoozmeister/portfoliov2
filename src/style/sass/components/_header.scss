@@ -1,0 +1,31 @@
+header {
+    font-family: 'Koulen', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    &__logo {
+        width: 150px;
+        margin: 20px 0px 0px 20px;
+        & img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    &__menu {
+        margin-right: 50px;
+    }
+    &__link {
+        text-decoration: none;
+        margin-left: 80px;
+        color: $white;
+        font-size: 20px;
+        &:hover {
+            color: $yellow;
+            border-bottom: 2px solid $pink;
+        }
+    }
+}
+

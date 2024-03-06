@@ -1,0 +1,29 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: "Koulen",sans-serif;
+    color: $purple;
+    &__label {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__keywords {
+        max-height: 100px;
+        overflow: scroll;
+    }
+    & input {
+        font-family: "Koulen",sans-serif;
+    }
+}
+
+.techno {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+@mixin mainFont() {
+    font-family: 'Koulen', sans-serif;
+}
+
+@mixin titleFont() {
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+@mixin textFont() {
+    font-family: "Miriam Libre", sans-serif;
+}

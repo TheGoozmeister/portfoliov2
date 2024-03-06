@@ -1,0 +1,82 @@
+.mainContainer {
+    background-color: $purple;
+    opacity: 90%;
+    padding: 20px;
+    height: 70vh;
+}
+
+.pageContainer {
+    height: 90%;
+    background-color: $pink;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    opacity: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $yellow;
+    box-shadow: 2px 2px 2px $yellow;
+}
+
+.projectList {
+    width: 45%;
+    &__sort {
+
+    }
+    &__results {
+        max-height: 42vh;
+        overflow: scroll;
+    }
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    color: $purple;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 10px;
+    &__text {
+        padding-right: 20px;
+    }
+    &__icon {
+        background-color: $purple;
+        color: $white;
+        border-radius: 6px;
+        padding: 2px;
+    }
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tuto {
+    width: 100%;
+    margin: auto;
+    @include mainFont;
+    color: $white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.tutoAndProject {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.results {
+    color: $yellow;
+    @include mainFont;
+}

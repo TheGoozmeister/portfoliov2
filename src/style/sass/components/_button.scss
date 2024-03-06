@@ -1,0 +1,11 @@
+.button {
+    background: linear-gradient(to bottom, $pink, $purple);
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    &__link {
+        text-decoration: none;
+        color: $yellow;
+        @include mainFont;
+    }
+}
