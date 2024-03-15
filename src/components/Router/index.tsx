@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import Header from '../Header/index.tsx';
 import Landing from '../../pages/Landing/index.tsx';
-import Backstory from '../../pages/Backstory/index.tsx';
-import Skillset from '../../pages/Skillset/index.tsx';
+import Hardskills from '../../pages/Hardskills/index.tsx';
 import Projects from '../../pages/Projects/index.tsx';
 import Contact from '../../pages/Contact/index.tsx';
+import Softskills from '../../pages/Softskills/index.tsx';
 
 
 function AppRouter() : JSX.Element {
@@ -18,8 +18,8 @@ function AppRouter() : JSX.Element {
             <Header />
             <Routes>
                 <Route path='/' element={<Landing />} />
-                <Route path='/backstory' element={<Backstory />} />
-                <Route path='/skillset' element={<Skillset />} />
+                <Route path='/softskills' element={<Softskills />} />
+                <Route path='/hardskills' element={<Hardskills />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/contact' element={<Contact />} />
             </Routes>

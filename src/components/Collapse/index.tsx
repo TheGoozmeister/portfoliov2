@@ -20,11 +20,15 @@ function Collapse (props: CollapseProps) : JSX.Element {
         <div className="collapse">
             <div className="collapse__header">
                 <div className="collapse__header__title">{title}</div>
-                <div className="collapse__header__icon" onClick={handleClick}></div>
+                {isHidden ? 
+                    <div className="collapse__header__icon" onClick={handleClick}><i className="fa-solid fa-down-long"></i></div>
+                    :
+                    <div className="collapse__header__icon" onClick={handleClick}><i className="fa-solid fa-up-long"></i></div>
+                }
             </div>
             {!isHidden && 
                 <div className="collapse__main">
-                <div className="collapse__main__image"><img src={cover} alt={title} /></div>
+                {/* <div className="collapse__main__image"><img src={cover} alt={title} /></div> */}
                 <div className="collapse__main__text">{description}</div>
             </div>
             }

@@ -1,29 +1,50 @@
 .collapse {
-    width: 35%;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: scroll;
     &__header {
         background-color: $pink;
         color: $white;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 3px;
+        padding-left: 10px;
+        
         &__title {
             @include mainFont;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
         &__icon {
             width: 30px;
-            height: 30px;
+            height: 40px;
             background-color: white;
+            color: $pink;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px
         }
     }
     &__main {
+        overflow: scroll;
+        
         &__image {
 
         }
         &__text {
             @include textFont;
+            padding: 10px;
             color: $white;
             background-color: $purple;
+            opacity: 90%;
+            text-align: justify;
+            height: 100%;
+            overflow: scroll;
         }
     }
 }

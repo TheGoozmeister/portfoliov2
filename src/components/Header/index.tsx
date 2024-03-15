@@ -17,7 +17,7 @@ function Header () : JSX.Element {
     return (
         <header>
             <div className="header__logo">
-                <NavLink to={"/"} className="header__link">
+                <NavLink to={"/"} className="containerLogo">
                     <img src={logo} alt="logo" />
                 </NavLink>
             </div>
@@ -27,8 +27,9 @@ function Header () : JSX.Element {
                 <Flag language="fr" />
             }
             <nav className="header__menu">
-                <NavLink to={"/backstory"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.backstory}</NavLink>
-                <NavLink to={"/skillset"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.skillset}</NavLink>
+                <NavLink to={"/"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.home}</NavLink>
+                <NavLink to={"/softskills"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.backstory}</NavLink>
+                <NavLink to={"/hardskills"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.skillset}</NavLink>
                 <NavLink to={"/projects"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.projects}</NavLink>
                 <NavLink to={"/contact"} className="header__link" style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.contact}</NavLink>
             </nav>

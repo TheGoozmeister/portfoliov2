@@ -17,11 +17,11 @@ function Landing () : JSX.Element {
 
     return (
         <div className="landing">
-            <ReactAudioPlayer 
+            {/* <ReactAudioPlayer 
                 id="mainSound"
                 src={sound}
                 autoPlay={true}
-            />
+            /> */}
             <h1>{texts.title}</h1>
             <div className="landing__main">
                 <div className="landing__main__presentation">
@@ -30,10 +30,10 @@ function Landing () : JSX.Element {
                         <div className="presentationText__2">{texts.presentation2}</div>
                     </div>
                     <div className="landing__main__presentation__button">                          
-                        <Button text={texts.button} link="/backstory" />
+                        <Button text={texts.button} link="/softskills" />
                     </div>
                 </div>
-                <div className="landing__setup">
+                {/* <div className="landing__setup">
                     <div className="landing__setup__label">
                         {texts.setup}
                     </div>
@@ -41,7 +41,7 @@ function Landing () : JSX.Element {
                         <Flag language="fr" />
                         <Flag language="eng" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div> 
     )

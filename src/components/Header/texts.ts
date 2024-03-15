@@ -1,13 +1,15 @@
 const headerTexts = {
     eng: {
-        backstory: "Backstory",
-        skillset: "Skillset",
+        home: 'Home',
+        backstory: "Softskills",
+        skillset: "Hardskills",
         projects: "Projects",
         contact: "Contact",
     },
     fr: {
-        backstory: "Accueil",
-        skillset: "Compétences",
+        home: "Accueil",
+        backstory: "Softskills",
+        skillset: "Hardskills",
         projects: "Projets",
         contact: "Contact",
     },

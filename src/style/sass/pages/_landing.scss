@@ -7,14 +7,25 @@
         &__presentation {
             width: 90%;
             margin: auto;
+            
+            height: 420px;
             &__text{
                 @include mainFont;
                 color: $white;
                 text-align: justify;
                 width: 20%;
+                @include smartphone {
+                    width: 100%;
+                    font-size: 12px;
+                    text-align: center;
+                    display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+                }
             }
             &__button {
-                width: 20%;
+
             }
         }
     }
@@ -44,6 +55,12 @@ h1 {
     font-size: 46px;
     font-weight: 400;
     font-family: 'Lexend Zetta', sans-serif;
+    @include smartphone {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
 }
 
 .presentationText__2{

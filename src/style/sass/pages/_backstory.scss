@@ -1,6 +1,23 @@
 .collapsesContainer {
-    width: 100%;
+    width: 70%;
     margin: auto;
     background-color: $purple;
     opacity: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 40px;
+}
+
+
+.softskills {
+    &__intro, &__outro {
+        @include textFont;
+        color: $white;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }

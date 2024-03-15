@@ -3,6 +3,7 @@ import Button from "../Button/index.tsx"
 import { useSelector } from "react-redux";
 import { RootState, AppDispatch } from "../../store/store";
 import projectsData from '../../datas/projects.json';
+import Logo from "../Logo/index.tsx";
 
 
 declare var require: any
@@ -14,6 +15,7 @@ interface ProjectDatas {
     title: string;
     description: { [key: string]: string }; 
     technos: Array<string>;
+    tools: Array<string>;
     summary: { [key: string]: string }; 
     projectLink: string;
 }
@@ -37,16 +39,30 @@ function Project () : JSX.Element {
             </div>
             <div className="project__title">{project.title}</div>
             <div className="project__infos">
-                <div className="project__infos__summary">{project.description[actualLanguage]}</div>
-                <div className="project__infos__technos">
-                {
-                    project.technos.map((techno: string, index: number)=>(
-                        <div key={index} className="project__infos__technos__techno">
-                            {techno}
-                        </div>
-                    ))
-                }
+                <div className="project__infos__summary">{project.summary[actualLanguage]}</div>
+                <div className="tectool">
+                    <div className="project__infos__technos">
+                        {
+                            project.technos.map((techno: string, index: number)=>(
+                                <div key={index} className="project__infos__technos__techno">
+                                    <Logo text={techno} />
+                                    {techno}
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="project__infos__tools">
+                        {
+                            project.tools.map((tool: string, index: number)=>(
+                                <div key={index} className="project__infos__tools__tool">
+                                    <Logo text={tool} />
+                                    {tool}
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
+                
             </div>
             <Button text="See project" link="#" />
         </div>

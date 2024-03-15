@@ -16,6 +16,7 @@ interface Project {
     cover: string;
     description: string;
     technos: string[];
+    tools: string[];
     summary: string;
     projectLink: string;
 }

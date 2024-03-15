@@ -154,6 +154,9 @@
         "tools": [
             "GIT",
             "SASS",
+            "SILICIUM",
+            "FIGMA",
+            "DOCKER",
             "REDUX"
         ],
         "summary": {
@@ -171,6 +174,10 @@
         },
         "technos": [
             "HTML/CSS",
+            "SASS"
+        ],
+        "tools" : [
+            "GIT",
             "SASS"
         ],
         "summary": {
@@ -191,6 +198,9 @@
             "SASS",
             "JAVASCRIPT"
         ],
+        "tools" : [
+            "GIT"
+        ],
         "summary": {
             "eng" : "Project developed in vanilla JavaScript. The main challenge was to create a dynamic form.",
             "fr": "Projet réalisé en javascript vanilla. L'enjeu principal était de développer un formulaire dynamique."
@@ -209,6 +219,11 @@
             "SASS",
             "JAVASCRIPT"
         ],
+        "tools" : [
+            "GIT",
+            "SASS",
+            "ACCESSIBILITY"
+        ],
         "summary": {
             "eng" : "The challenge of this project was to create a fully accessible website, allowing keyboard navigation and compatible with the devices of visually impaired individuals. It was implemented using vanilla JavaScript.",
             "fr": "L'enjeu de ce projet était d'avoir un site entièrement accessible, permettant la navigation au clavier et compatible avec les dispositifs des personnes mal voyantes. Il a été réalisé en Javascript vanilla."
@@ -224,6 +239,10 @@
         },
         "technos": [
             
+        ],
+        "tools" : [
+            "FIGMA",
+            "KANBAN"
         ],
         "summary": {
             "eng" : "Based on a specification document, the challenge of this project was to establish user stories, design the website mockups using Figma, create use case diagrams, and set up a Kanban board to break down the project in a macro-level manner.",
@@ -244,6 +263,11 @@
             "JAVASCRIPT",
             "REACT"
         ],
+        "tools" : [
+            "GIT",
+            "SASS",
+            "RECHARTS"
+        ],
         "summary": {
             "eng" : "A React application utilizing API calls and the Recharts library for creating charts.",
             "fr": "Application React utilisant des appels API et la librairie Recharts pour la réalisation des graphiques."
@@ -261,6 +285,10 @@
             "HTML/CSS",
             "BOOTSTRAP"
         ],
+        "tools" : [
+            "SEO",
+            "ACCESSIBILITY"
+        ],
         "summary": {
             "eng" : "Project to optimize an existing website. The goal was to make it accessible and to improve its SEO performance by implementing key performance indicators (KPIs).",
             "fr": "Projet d'optimisation d'un site web existant. L'objectif était de le rendre accessible et de fournir un travail au niveau du SEO, en mettant en place des KPI."
@@ -276,7 +304,10 @@
         },
         "technos": [
             "HTML/CSS",
-            "BOOTSTRAP"
+            "JAVASCRIPT"
+        ],
+        "tools" : [
+            "GIT"
         ],
         "summary": {
             "eng" : "Sofa sales website built using vanilla JavaScript. This project served as my introduction to the language, where I implemented my first dynamic forms, API calls, and regular expressions.",
@@ -289,11 +320,14 @@
         "cover": "booki.png",
         "description": {
             "eng" : "Optimizing a web design agency",
-            "fr": "Optimisation d'une agence de web design"
+            "fr": "Maquette d'une application d'hébergements"
         },
         "technos": [
             "HTML/CSS",
             "BOOTSTRAP"
+        ],
+        "tools" : [
+    
         ],
         "summary": {
             "eng" : "Showcase website for housing listings. This was the first project I completed using HTML/CSS.",

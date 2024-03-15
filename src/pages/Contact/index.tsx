@@ -15,7 +15,8 @@ function Contact () : JSX.Element {
     const [mailSent, setMailSent] = useState(false);
     const actualLanguage = useSelector((state: RootState)=> state.language.language);
     const texts = contactTexts[actualLanguage];
-
+    console.log(texts)
+    console.log(texts.rgpd)
     async function sendEmail(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         console.log("test")
@@ -47,6 +48,9 @@ function Contact () : JSX.Element {
         <div>
             <div className="mainContainer">
                 <h2>{texts.title}</h2>
+                <div className="rgpd">
+                    {texts.rgpd}
+                </div>
                 {mailSent ? 
                     <div className="mailConfirmed">
 

@@ -9,3 +9,9 @@
 @mixin textFont() {
     font-family: "Miriam Libre", sans-serif;
 }
+
+@mixin smartphone() {
+    @media all and (max-width: 768px) {
+        @content
+    }
+}

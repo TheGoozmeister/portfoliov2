@@ -1,71 +1,113 @@
 .mainContainer {
     background-color: $purple;
     opacity: 90%;
-    padding: 20px;
+    padding: 20px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 70vh;
 }
 
 .pageContainer {
     height: 90%;
     background-color: $pink;
-    border-radius: 20px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     opacity: 90%;
-    padding: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     border: 1px solid $yellow;
     box-shadow: 2px 2px 2px $yellow;
+    @include smartphone {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .projectList {
     width: 45%;
+    padding-left: 2%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @include smartphone {
+        width: 100%;
+        padding: 0;
+    }
     &__sort {
 
     }
     &__results {
-        max-height: 42vh;
+        padding: 20px 0px 15px 0px;
+        border-radius: 8px;
+        margin-top: 10px;
+        max-height: 300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         overflow: scroll;
     }
 }
 
 .tags {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .tag {
     display: flex;
     justify-content: space-between;
-    background-color: $white;
-    color: $purple;
+    background-color: $purple;
+    color: $yellow;
     border-radius: 4px;
-    padding: 2px 5px 2px 5px;
+    padding: 2px 2px 2px 5px;
     margin-bottom: 10px;
+    border: 1px solid $purple;
+    margin-right: 10px;
     &__text {
-        padding-right: 20px;
+        padding-right: 5px;
+        @include mainFont;
     }
     &__icon {
-        background-color: $purple;
-        color: $white;
-        border-radius: 6px;
-        padding: 2px;
+        
+        color: $yellow;
+        border-radius: 3px;
+        padding-top: 6px;
+        width: 20px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    &__delete {
+        margin-left: 10px;
+        background-color: $pink;
+        padding: 6px 3px 0px 3px;
+        border-radius: 2px;
+        border: 1px solid $purple;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
+.tagMain {
+    display: flex;
+}
 .dropdowns {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .tuto {
     width: 100%;
     margin: auto;
-    @include mainFont;
+    @include textFont;
     color: $white;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .tutoAndProject {
@@ -80,3 +122,16 @@
     color: $yellow;
     @include mainFont;
 }
+
+.keyword{
+    background-color: $yellow;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &:hover {
+        color: $yellow;
+        background-color: $purple;
+        cursor: pointer;
+    }
+}
+

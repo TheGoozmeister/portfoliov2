@@ -1,10 +1,10 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTag, removeTechnoKeyword, setCurrentSearch, setTechnoKeywords } from "../../store/project/projectSlice.ts";
+import { addTag, removeToolKeyword, setCurrentSearch, setToolKeywords } from "../../store/project/projectSlice.ts";
 import { RootState } from "../../store/store.ts";
-import Keyword from "../Keyword/index.tsx";
 import Project from "../Project/index.tsx";
-import dropdownTechnoText from "./text.ts";
+import Keyword from "../Keyword/index.tsx";
+import dropdownToolText from "./text.ts";
 declare var require: any
 const projectsDatas: Project[] = require('../../datas/projects.json');
 
@@ -15,36 +15,38 @@ interface Project {
     cover: string;
     description: string;
     technos: string[];
+    tools: string[];
     summary: string;
     projectLink: string;
 }
 
-function Dropdown() : JSX.Element {
+function DropdownTool() : JSX.Element {
 
     const dispatch = useDispatch();
     const [isHidden, setIsHidden] = useState(true);
     const currentSearch = useSelector((state: RootState)=>state.project.currentSearch)
-    const keywords = useSelector((state: RootState)=>state.project.technoKeywords);
+    const keywords = useSelector((state: RootState)=>state.project.toolKeywords);
     const tags = useSelector((state: RootState)=> state.project.tags);
     const actualLanguage = useSelector((state: RootState)=>state.language.language);
-    const texts = dropdownTechnoText[actualLanguage];
+    const texts = dropdownToolText[actualLanguage];
+
     useEffect(()=> {
 
-        const updatedTechnos = new Set<string>();
+        const updatedTools = new Set<string>();
         let allProjects : Project[] = [];
 
         projectsDatas.forEach((project)=> {
             allProjects.push(project);
-            project.technos.forEach(techno=>updatedTechnos.add(techno));
+            project.tools.forEach(tool=>updatedTools.add(tool));
         });
 
-        const lowercaseMatchingTechnos = Array.from(updatedTechnos).map((techno) => techno.toLowerCase());
+        const lowercaseMatchingTools = Array.from(updatedTools).map((tool) => tool.toLowerCase());
         
-        const matchingTechnos = lowercaseMatchingTechnos.filter((techno) =>
-            techno.includes(currentSearch.toLowerCase()) && !tags.includes(techno)
+        const matchingTools = lowercaseMatchingTools.filter((tool) =>
+            tool.includes(currentSearch.toLowerCase()) && !tags.includes(tool)
         );
 
-        dispatch(setTechnoKeywords(matchingTechnos));
+        dispatch(setToolKeywords(matchingTools));
 
     },[dispatch, currentSearch, tags]);
 
@@ -54,10 +56,11 @@ function Dropdown() : JSX.Element {
     }
 
     function handleClick(e: React.MouseEvent<HTMLDivElement>) {
-        const clickedTechno: string | null= e.currentTarget.textContent ;
-        if (!tags.includes(clickedTechno?.toLowerCase() as string)) {
-            dispatch(addTag(clickedTechno?.toLowerCase() as string));
-            dispatch(removeTechnoKeyword((clickedTechno?.toLowerCase() as string)));
+        const clickedTool: string | null= e.currentTarget.textContent ;
+        if (!tags.includes(clickedTool?.toLowerCase() as string)) {
+            dispatch(addTag(clickedTool?.toLowerCase() as string));
+            dispatch(removeToolKeyword((clickedTool?.toLowerCase() as string)));
+            setIsHidden(false);
         } 
     }   
 
@@ -81,20 +84,19 @@ function Dropdown() : JSX.Element {
             </div>
             {!isHidden && 
                 <div className="dropdown__search">
-                    <div className="dropdown__searchBar">
-                        <input type="text" placeholder="Search a techno" onChange={handleChange}/>
-                    </div>
-                    <div className="dropdown__keywords">
-                        {Array.from(keywords).map(techno => (
-                            <Keyword key={techno} onClick={(e)=>handleClick(e)} text={techno} />
-                        ))}                
-                    </div>
+                <div className="dropdown__searchBar">
+                    <input type="text" placeholder="Search a tool" onChange={handleChange}/>
                 </div>
+                <div className="dropdown__keywords">
+                    {Array.from(keywords).map(tool => (
+                        <Keyword key={tool} onClick={(e)=>handleClick(e)} text={tool} />
+                    ))}                
+                </div>
+            </div>
             }
         </div>
-            
     )
 }
 
 
-export default Dropdown;
+export default DropdownTool;
