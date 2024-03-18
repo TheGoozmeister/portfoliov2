@@ -11,6 +11,10 @@
         width: 60%;
         margin: auto;
         text-align: center;
+        @include smartphone {
+            width: 98%;
+            margin: auto;
+        }
     }
     &__board {
         width: 100%;
@@ -23,6 +27,10 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        @include smartphone {
+            height: 250px;
+            overflow: hidden;
+        }
         &__main {
             border: 2px solid $yellow;
             border-radius: 10px;
@@ -30,3 +38,4 @@
         }
     }
 }
+

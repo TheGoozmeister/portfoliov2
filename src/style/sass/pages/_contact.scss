@@ -62,6 +62,9 @@
 
 #message {
     height: 200px;
+    @include smartphone {
+        height: 100px;
+    }
 }
 
 .rgpd {
@@ -70,4 +73,10 @@
     @include textFont;
     color: $white;
     text-align: center;
+    @include smartphone {
+        width: 90%;
+        margin: auto;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
 }

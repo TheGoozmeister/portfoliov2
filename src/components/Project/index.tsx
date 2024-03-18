@@ -64,7 +64,10 @@ function Project () : JSX.Element {
                 </div>
                 
             </div>
-            <Button text="See project" link="#" />
+            <div id="bttProject">
+                see fefefe
+            </div>
+            
         </div>
     )
 }

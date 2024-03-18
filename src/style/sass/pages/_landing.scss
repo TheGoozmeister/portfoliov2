@@ -1,14 +1,26 @@
 .landing {
+    @include smartphone {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
     &__main {
         display: flex;
         justify-content: space-between;
         width: 90%;
         margin: auto;
+        @include smartphone {
+            align-items: center;
+        }
         &__presentation {
             width: 90%;
             margin: auto;
             
             height: 420px;
+            @include smartphone {
+                width: 100%;
+                margin: auto;
+                height: 150px;
+            }
             &__text{
                 @include mainFont;
                 color: $white;
@@ -19,13 +31,20 @@
                     font-size: 12px;
                     text-align: center;
                     display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
                 }
             }
             &__button {
-
+                @include smartphone {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 180px;
+                }
             }
         }
     }
@@ -66,4 +85,10 @@ h1 {
 .presentationText__2{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.button {
+    position: fixed;
+    bottom: 10px;
+
 }

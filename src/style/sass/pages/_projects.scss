@@ -34,6 +34,8 @@
     @include smartphone {
         width: 100%;
         padding: 0;
+        position: relative;
+        height: 480px;
     }
     &__sort {
 
@@ -47,6 +49,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         overflow: scroll;
+        @include smartphone {
+            position: absolute;
+            left: 10px;
+            top: 155px;
+            width: 35%;
+            overflow: scroll;
+        }
     }
 }
 
@@ -55,6 +64,16 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 10px;
+    @include smartphone {
+        display: flex;
+        width: 150px;
+        height: 40px;
+        overflow: scroll;
+        position: absolute;
+        left: 10px;
+        top: 115px;
+        z-index: 1;
+    }
 }
 
 .tag {
@@ -67,9 +86,15 @@
     margin-bottom: 10px;
     border: 1px solid $purple;
     margin-right: 10px;
+    @include smartphone {
+        width: 50px;
+    }
     &__text {
         padding-right: 5px;
         @include mainFont;
+        @include smartphone {
+            display: none;
+        }
     }
     &__icon {
         
@@ -86,6 +111,9 @@
         padding: 6px 3px 0px 3px;
         border-radius: 2px;
         border: 1px solid $purple;
+        @include smartphone {
+            margin-left: 0;
+        }
         &:hover {
             cursor: pointer;
         }
@@ -108,6 +136,13 @@
     text-align: justify;
     margin-bottom: 15px;
     margin-top: 10px;
+    @include smartphone {
+        width: 38%;   
+        margin-left: 10px;    
+        height: 130px; 
+        overflow: scroll;
+        font-size: 12px;
+    }
 }
 
 .tutoAndProject {
@@ -119,8 +154,14 @@
 }
 
 .results {
-    color: $yellow;
+    color: $white;
     @include mainFont;
+    @include smartphone{
+        position: absolute;
+        font-size: 14px;
+        top: 100px;
+        left: 10px;
+    }
 }
 
 .keyword{
@@ -135,3 +176,26 @@
     }
 }
 
+#toolDrop {
+    @include smartphone {
+        position: absolute;
+        right: 20px;
+        margin-right: 0px;
+        top: 0px;
+    }
+}
+
+#techDrop {
+    @include smartphone {
+        position: absolute;
+        right: 20px;
+        margin-right: 0px;
+        top: 40px;
+    }
+}
+
+.resultTags {
+ @include smartphone {
+    overflow: scroll;
+ }   
+}

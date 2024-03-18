@@ -66,7 +66,7 @@ function Dropdown() : JSX.Element {
     }
 
     return (
-        <div className="dropdown">
+        <div className="dropdown" id="techDrop">
             <div className="dropdown__label">
                 <div className="dropdown__label__text">{texts}</div>
                 {isHidden ? 

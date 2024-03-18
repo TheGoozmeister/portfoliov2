@@ -5,8 +5,9 @@ header {
     align-items: center;
     height: 150px;
     @include smartphone {
-        height: 70px;
+        height: 50px;
         width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -19,7 +20,9 @@ header {
         width: 150px;
         margin: 20px 0px 0px 20px;
         @include smartphone {
-            width: 40px;
+            width: 80px;
+            margin-left: 10px;
+            padding-top:20px;
         }
         & img {
             object-fit: cover;
@@ -29,18 +32,35 @@ header {
     &__menu {
         margin-right: 50px;
         @include smartphone {
-            width: 100%;
+            width: 40%;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            background-color: $white;
+            border-top: none;
+            z-index: 2;
+            margin-top: 10px;
         }
     }
     &__link {
         text-decoration: none;
-        margin-left: 80px;
-        color: $white;
+        color: $purple;
         font-size: 20px;
+        @include smartphone {
+            text-align: right;
+            border: 1px solid $purple;
+            padding-right: 5px;
+            margin-left: 0px;
+        }
         &:hover {
             color: $yellow;
             border-bottom: 2px solid $pink;
+            @include smartphone {
+                border-bottom: none;
+            }
         }
     }
 }
@@ -48,8 +68,26 @@ header {
 .flag {
     margin-left: 300px;
     padding: 2px;
+    @include smartphone {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        margin-left: 0;
+    }
 }
 
 .containerLogo {
     width: 50px;
+}
+
+.burger {
+    @include smartphone {
+        cursor: pointer;
+    color: $pink;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 36px;
+    }
+    
 }
