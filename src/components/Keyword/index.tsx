@@ -27,8 +27,8 @@ function Keyword(props) : JSX.Element {
 
     return (
         <div className="keyword" onClick={handleClick}>
-            <div className="tag__text">{text.toUpperCase()}</div>
-            <div ref={tagIconRef} className="tag__icon"></div>
+            <div className="keyword__text">{text.toUpperCase()}</div>
+            <div ref={tagIconRef} className="keyword__icon"></div>
         </div>
     )
 }

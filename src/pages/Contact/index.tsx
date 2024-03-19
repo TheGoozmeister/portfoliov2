@@ -69,7 +69,7 @@ function Contact () : JSX.Element {
                             <label className="label" htmlFor="message">{texts.message}</label>
                             <textarea className="input"name="message" id="message" value={formData.message} onChange={handleChange} />
                         </div>
-                        <button className="button form__button" type="submit">{texts.button}</button>
+                        <button className="button form__button" type="submit" id="sendBtn">{texts.button}</button>
                     </form>
                 }
             </div>

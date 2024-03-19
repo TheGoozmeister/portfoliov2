@@ -1,6 +1,6 @@
 .skillset {
     background-color: $purple;
-    opacity: 90%;
+    opacity: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +9,7 @@
     @include textFont;
     &__intro , &__outro{
         width: 60%;
+        opacity: 90%;
         margin: auto;
         text-align: center;
         @include smartphone {
@@ -18,8 +19,7 @@
     }
     &__board {
         width: 100%;
-        background-color: $pink;
-        opacity: 90%;
+        opacity: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: auto;
@@ -27,6 +27,13 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        position: relative;
+        & img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            filter: blur(3px);
+        }
         @include smartphone {
             height: 250px;
             overflow: hidden;
@@ -34,8 +41,80 @@
         &__main {
             border: 2px solid $yellow;
             border-radius: 10px;
-            box-shadow: 2px 4px 2px $yellow;
         }
     }
 }
 
+.boardButton {
+    padding: 5px 10px 5px 10px;
+    background-color: $white;
+    opacity: 90%;
+    @include mainFont;
+    color: $pink;
+    border-radius: 5px;
+    width: 250px;
+    position: absolute;
+    box-shadow: 1px 1px 2px $purple;
+    border: 1px solid $purple;
+    top: 110px;
+    left: 21%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    &:hover {
+        border: 1px solid $pink;
+        box-shadow: 3px 3px 5px $pink;
+        color: $yellow;
+        background-color: $purple;
+    }
+}
+
+.fullscreen {
+    height: 430px;    
+    opacity: 99%;
+    margin-top: 180px;
+    transform: rotate(90deg);
+    position: relative;
+    &__exit {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        z-index: 3;
+        color: $yellow;
+        background-color: $pink;
+        width: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 20px;
+        padding-top: 5px;
+        border: 1px solid $purple;
+        cursor: pointer;
+        
+    }
+    &__quit {
+        transform: rotate(90deg);  
+        position: absolute;  
+        top: 390px;
+        right: 250px;
+        width: 200px;
+        @include mainFont;
+        background-color: $pink;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px $yellow;
+        cursor: pointer;
+        &:hover {
+            background-color: $purple;
+            box-shadow: 2px 2px 4px $pink;
+
+        }
+    }
+}
+
+.fullscreen img {
+    height: 100%;
+    object-fit: contain; /* Pour conserver les proportions de l'image */
+}

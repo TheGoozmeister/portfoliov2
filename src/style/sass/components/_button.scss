@@ -9,6 +9,12 @@
     padding: 10px 25px 10px 25px;
     margin-top: 10px;
     margin-bottom: 15px;
+    @include smartphone {
+            position: fixed;
+            bottom: 10px;
+            width: 20%;
+            left: 35%;
+    }
     &__link {
         text-decoration: none;
         color: $yellow;

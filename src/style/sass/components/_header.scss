@@ -39,7 +39,7 @@ header {
             position: absolute;
             right: 0px;
             top: 60px;
-            background-color: $white;
+            background-color: $purple;
             border-top: none;
             z-index: 2;
             margin-top: 10px;
@@ -51,15 +51,18 @@ header {
         font-size: 20px;
         @include smartphone {
             text-align: right;
-            border: 1px solid $purple;
-            padding-right: 5px;
+            border: 1px solid $yellow;
+            border-right: none;
+            padding-right: 10px;
             margin-left: 0px;
+            color: $yellow;
         }
         &:hover {
             color: $yellow;
             border-bottom: 2px solid $pink;
             @include smartphone {
                 border-bottom: none;
+                color: $pink;
             }
         }
     }

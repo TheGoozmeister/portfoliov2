@@ -3,7 +3,7 @@
     margin: auto;
     margin-bottom: 20px;
     @include smartphone {
-        width: 95%;
+        width: 80%;
         margin: auto;
         height: 220px;
         margin-bottom: 10px;
@@ -22,7 +22,10 @@
             padding-bottom: 5px;
             width: 950px;
             @include smartphone {
-                width: 100%;
+                width: 80%;
+                margin: auto;
+                margin-left: 0;
+                padding-left: 0;
             }
         }
         &__icon {

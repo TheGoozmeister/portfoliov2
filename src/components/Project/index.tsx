@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState, AppDispatch } from "../../store/store";
 import projectsData from '../../datas/projects.json';
 import Logo from "../Logo/index.tsx";
+import { projectTexts } from "./texts.ts";
 
 
 declare var require: any
@@ -25,6 +26,7 @@ function Project () : JSX.Element {
     const projectId = useSelector((state: any)=>state.project.projectId);
     const project : ProjectDatas | undefined = projectsData.find((project)=>project.id === projectId);
     const actualLanguage = useSelector((state: RootState)=> state.language.language);
+    const text = projectTexts[actualLanguage];
 
     if (!project) {
         return <div>Projet introuvable</div>;
@@ -65,7 +67,7 @@ function Project () : JSX.Element {
                 
             </div>
             <div id="bttProject">
-                see fefefe
+                {text} <i className="fa-brands fa-github"></i>
             </div>
             
         </div>
