@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { RootState } from "../../store/store";
@@ -11,11 +11,28 @@ const logo = require ('../../assets/logos/header-logo.png')
 function Header () : JSX.Element {
 
     const actualLanguage = useSelector((state: RootState)=> state.language.language);
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
     const texts = headerTexts[actualLanguage];
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 768) {
+                setShowMenu(false);
+            } else {
+                setShowMenu(true);
+            }
+        };
+
+        // Add event listener to handle window resize
+        window.addEventListener('resize', handleResize);
+
+        // Remove event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     
     const toggleMenu = () => {
-        setShowMenu(!showMenu); // Inversion de l'état lorsque le bouton est cliqué
+        if (window.innerWidth<=768) {
+            setShowMenu(!showMenu);
+        }
     };
 
     
@@ -32,9 +49,11 @@ function Header () : JSX.Element {
                 :
                 <Flag language="fr" />
             }
-            <div className="burger" onClick={toggleMenu}>
+            {window.innerWidth <= 768 &&
+                <div className="burger" onClick={toggleMenu}>
                 <i className="fa-solid fa-bars"></i>
             </div>
+            }
             {showMenu && 
                 <nav className="header__menu">
                 <NavLink to={"/"} className="header__link" onClick={toggleMenu} style={({isActive})=>isActive ? {color: "#F55970"} : {}}>{texts.home}</NavLink>

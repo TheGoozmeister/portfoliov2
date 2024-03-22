@@ -24,7 +24,7 @@
                 "eng" : "Portfolio project built as a Single Page Application (SPA) using React and Typescript. UI/UX design work was done with Figma. Language selection is managed with Redux. Sass preprocessor was used for all CSS styling.",
                 "fr" : "Projet de portfolio en SPA réalisé en React et Typescript. Le travail d'UI/UX a été réalisé à l'aide de figma. Le choix de la langue est géré avec Redux. Le préprocesseur Sass a été utilisé pour l'ensemble du CSS."
             },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/portfoliov2"
     },
     {
         "id": 2,
@@ -49,7 +49,7 @@
             "eng": "Project built from HTML/CSS wireframes. Redux was implemented to allow users to log in to the application and modify their personal information.",
             "fr": "Projet réalisé à partir de warframes HTML/CSS. Redux a été implanté afin de permettre à l'utilisateur de se connecter à l'application et de modifier ses informations personnelles. "
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p13"
     },{
         "id": 3,
         "title": "Billed",
@@ -70,7 +70,7 @@
             "eng" : "",
             "fr": ""
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p9"
     },{
         "id": 4,
         "title": "Kasa",
@@ -92,7 +92,7 @@
             "eng" : "First React project completed. The application is a website similar to Airbnb, where multiple accommodations are offered based on provided data. A carousel component was notably developed in this project.",
             "fr": "Premier projet réalisé en React. L'application est un site type airbnb, où plusieurs logements sont proposés à partir de datas fournies. Un composant carrousel a notamment été développé dans ce projet. "
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/Kasa"
     },{
         "id": 5,
         "title": "Les Petits Plats",
@@ -113,7 +113,7 @@
             "eng" : "Project implemented in vanilla JavaScript. The objective here was to create a search algorithm in multiple ways and compare their performances.",
             "fr": "Projet réalisé en Javascript vanilla. L'objectif ici était de réalisé un algorithme de recherche de plusieurs manières et d'en comparer les performances."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p7"
     },{
         "id": 6,
         "title": "Portfolio V1",
@@ -133,7 +133,7 @@
             "eng" : "First version of my portfolio. The project utilizes the Bootstrap library for all the site's CSS.",
             "fr": "Première version de mon portfolio. Le projet utilise la bibliothèque bootstrap pour l'ensemble du css du site. "
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/portfolio"
     },
     {
         "id": 7,
@@ -163,7 +163,7 @@
             "eng" : "Béber is a mobile-first application designed to assist in event organization. It allows multiple users to create and join events, suggest accommodations using links from platforms like Airbnb, and vote on the stay location. The frontend is built with React, the backend with Node.js, and the database with MySQL. Docker was used for deploying the first test version.",
             "fr": "Béber est une application mobilefirst accompagnatrice d'organisation d'évènements. Elle permet à plusieurs personnes de créer et de rejoindre un évènement, de proposer des logements à partir de liens d'annonces type airbnb, et de voter pour le lieu de séjour. Le front est en React, le back en NodeJS, la base de données en MYSQL. Docker a été utilisé pour le déploiement de la première version de test."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/b-ber"
     },{
         "id": 8,
         "title": "OhMyFood",
@@ -184,7 +184,7 @@
             "eng" : "Website in HTML/CSS featuring multiple animations. It's the first project utilizing Sass, which I subsequently used in the vast majority of projects.",
             "fr": "Site en HTML/CSS avec plusieurs animations. C'est le premier projet utilisant Sass, que j'ai par la suite utilisé dans la grande majorité des projets."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/Ohmyfood"
     },{
         "id": 9,
         "title": "GameOn",
@@ -205,7 +205,7 @@
             "eng" : "Project developed in vanilla JavaScript. The main challenge was to create a dynamic form.",
             "fr": "Projet réalisé en javascript vanilla. L'enjeu principal était de développer un formulaire dynamique."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p4"
     },{
         "id": 10,
         "title": "FishEye",
@@ -228,7 +228,7 @@
             "eng" : "The challenge of this project was to create a fully accessible website, allowing keyboard navigation and compatible with the devices of visually impaired individuals. It was implemented using vanilla JavaScript.",
             "fr": "L'enjeu de ce projet était d'avoir un site entièrement accessible, permettant la navigation au clavier et compatible avec les dispositifs des personnes mal voyantes. Il a été réalisé en Javascript vanilla."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p6"
     },{
         "id": 11,
         "title": "Learn@Home",
@@ -272,7 +272,7 @@
             "eng" : "A React application utilizing API calls and the Recharts library for creating charts.",
             "fr": "Application React utilisant des appels API et la librairie Recharts pour la réalisation des graphiques."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p12"
     },{
         "id": 13,
         "title": "La Panthère",
@@ -293,7 +293,7 @@
             "eng" : "Project to optimize an existing website. The goal was to make it accessible and to improve its SEO performance by implementing key performance indicators (KPIs).",
             "fr": "Projet d'optimisation d'un site web existant. L'objectif était de le rendre accessible et de fournir un travail au niveau du SEO, en mettant en place des KPI."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/Panthere-"
     },{
         "id": 14,
         "title": "Kanap",
@@ -313,7 +313,7 @@
             "eng" : "Sofa sales website built using vanilla JavaScript. This project served as my introduction to the language, where I implemented my first dynamic forms, API calls, and regular expressions.",
             "fr": "Site de vente de canapés réalisé en Javascript vanilla. C'est le projet par lequel j'ai appris ce langage., en mettant en place mes premiers formulaires dynamiques, appels API et regex."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/kanap"
     },{
         "id": 15,
         "title": "Booki",
@@ -333,6 +333,6 @@
             "eng" : "Showcase website for housing listings. This was the first project I completed using HTML/CSS.",
             "fr": "Site vitrine de propositions de logements. C'est le premier projet en HTML/CSS que j'ai réalisé."
         },
-        "projectLink" : "#"
+        "projectLink" : "https://github.com/TheGoozmeister/p2"
     }
 ]

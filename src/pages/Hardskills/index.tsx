@@ -34,7 +34,7 @@ function Hardskills(): JSX.Element {
             </div>
                 
             : 
-            <div>
+            <div className="hardskills">
                 <h2>{texts.title}</h2>
                 <div className="skillset__intro">
                     {texts.intro}

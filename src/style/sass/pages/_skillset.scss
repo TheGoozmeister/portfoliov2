@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: $white;
     padding-top: 20px;
     @include textFont;
@@ -18,7 +19,8 @@
         }
     }
     &__board {
-        width: 100%;
+        width: 60%;
+        height: 450px;
         opacity: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -37,6 +39,8 @@
         @include smartphone {
             height: 250px;
             overflow: hidden;
+            width: 100%;
+
         }
         &__main {
             border: 2px solid $yellow;
@@ -47,22 +51,28 @@
 
 .boardButton {
     padding: 5px 10px 5px 10px;
-    background-color: $white;
+    background-color: $yellow;
     opacity: 90%;
     @include mainFont;
     color: $pink;
     border-radius: 5px;
-    width: 250px;
     position: absolute;
     box-shadow: 1px 1px 2px $purple;
     border: 1px solid $purple;
-    top: 110px;
-    left: 21%;
+    top: 42%;
+    left: 36%;
+    width: 30%;
+    font-size: 16px;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 1;
+    @include smartphone {
+        width: 250px;
+        top: 110px;
+        left: 21%;
+    }
     &:hover {
         border: 1px solid $pink;
         box-shadow: 3px 3px 5px $pink;
@@ -72,16 +82,25 @@
 }
 
 .fullscreen {
-    height: 430px;    
+    @include smartphone {
+        height: 430px;
+        margin-top: 180px;
+        transform: rotate(90deg);
+    }
+        
     opacity: 99%;
-    margin-top: 180px;
-    transform: rotate(90deg);
+    
     position: relative;
     &__exit {
-        position: absolute;
+            position: absolute;
         top: 100px;
-        right: 10px;
-        z-index: 3;
+        right: 20%;
+        
+        @include desktop {
+            top: 200px;
+            right: 50px;
+        }
+        z-index: 1;
         color: $yellow;
         background-color: $pink;
         width: 50px;
@@ -106,6 +125,9 @@
         border-radius: 5px;
         box-shadow: 2px 2px 2px $yellow;
         cursor: pointer;
+        @include desktop {
+            display: none;
+        }
         &:hover {
             background-color: $purple;
             box-shadow: 2px 2px 4px $pink;
@@ -117,4 +139,10 @@
 .fullscreen img {
     height: 100%;
     object-fit: contain; /* Pour conserver les proportions de l'image */
+}
+
+.hardskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

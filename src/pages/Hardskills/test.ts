@@ -9,7 +9,7 @@ const skillsetTexts = {
     },
     fr: {
         title: "Un tronc solide",
-        intro: "Au cours de ma reconversion en développeur web, j'ai développé tant des compétences Front End que Back End, utilisant différentes librairies et la manipulation de bases de données. Je vise maintenant à développer mes compétences autour de la cybersécurité en étudiant les différents protocoles, Linux, et tout les outils nécessaires à une bonne stratégie de cyversécurité.",
+        intro: "Au cours de ma reconversion en développeur web, j'ai acquis  des compétences Front End et Back End, utilisant différentes librairies et la manipulation de bases de données. Je vise maintenant à accroître mes compétences autour de la cybersécurité en étudiant les protocoles TCP/IP, Linux, et tout les outils nécessaires à une bonne stratégie de cybersécurité.",
         outro: "Accédez à mes projets pour voir la mise en pratique de ces diverses compétences",
         button: "Projets",
         board: "Acceder a l'arbre de competence",

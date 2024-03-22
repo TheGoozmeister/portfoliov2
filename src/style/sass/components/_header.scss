@@ -31,6 +31,9 @@ header {
     }
     &__menu {
         margin-right: 50px;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
         @include smartphone {
             width: 40%;
             margin: 0;
@@ -47,8 +50,9 @@ header {
     }
     &__link {
         text-decoration: none;
-        color: $purple;
+        color: $white;
         font-size: 20px;
+        border-bottom: 2px solid transparent;
         @include smartphone {
             text-align: right;
             border: 1px solid $yellow;

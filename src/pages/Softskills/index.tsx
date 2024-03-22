@@ -26,7 +26,11 @@ function Softskills () : JSX.Element {
                                 title={collapse.title}
                                 description={collapse.description}
                                 cover={collapse.cover}
+                                button={collapse.button}
+                                link={collapse.link}
+                                example={collapse.example}
                                 isReversed={collapse.isReversed}
+                                icon={collapse.icon}
                             />
                         ))
                     }

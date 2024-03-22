@@ -1,39 +1,57 @@
 import React, { useState } from "react";
+declare var require: any
 
 
 interface CollapseProps {
     title: string;
     description: string;
     cover: string;
+    example: string;
+    button: string;
+    link: string;
     isReversed: boolean;
+    icon: string;
 }
 
 function Collapse (props: CollapseProps) : JSX.Element {
 
-    const [isHidden, setIsHidden] = useState(true);
-    const {title, description, cover, isReversed} = props;
-    console.log(title, description, cover, isReversed)
-    function handleClick () {
-        setIsHidden(!isHidden);
-    }
+    const {title, description, cover, isReversed, button, link, example, icon} = props;
+    const imgSrc = require(`../../assets/collapses/${cover}`);
+
+    
     return (
         <div className="collapse">
             <div className="collapse__header">
                 <div className="collapse__header__title">{title}</div>
-                {isHidden ? 
-                    <div className="collapse__header__icon" onClick={handleClick}><i className="fa-solid fa-down-long"></i></div>
+                <div className="collapse__header__icon" dangerouslySetInnerHTML={{ __html: icon }}></div>
+            </div>
+            <div className="collapse__main">
+                <div className="collapse__main__text">{description}</div>
+                {isReversed ? 
+                    (
+                        <div className="example">
+                            <div className="collapse__main__image"><img src={imgSrc} alt={title} /></div>
+                            <div className="collapse__main__image__example">
+                                <div className="example__text">{example}</div>
+                                <div className="example__button">{button}</div>
+                            </div>
+                        </div>
+                    )
                     :
-                    <div className="collapse__header__icon" onClick={handleClick}><i className="fa-solid fa-up-long"></i></div>
+                    (
+                        <div className="example">
+                            <div className="collapse__main__image__example">
+                                <div className="example__text">{example}</div>
+                                <div className="example__button">{button}</div>
+                            </div>
+                            <div className="collapse__main__image"><img src={imgSrc} alt={title} /></div>
+                        </div>
+                    )
                 }
             </div>
-            {!isHidden && 
-                <div className="collapse__main">
-                {/* <div className="collapse__main__image"><img src={cover} alt={title} /></div> */}
-                <div className="collapse__main__text">{description}</div>
-            </div>
-            }
+                
         </div>
-    )
+    );
 } 
 
 
