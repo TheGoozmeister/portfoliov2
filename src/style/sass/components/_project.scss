@@ -11,15 +11,15 @@
     @include smartphone {
         width: 100%;
         position: absolute;
-        top: 165px;
+        top: 190px;
         right: 10px;
-        width: 55%;
-        height: 375px;
+        width: 50%;
+        height: 355px;
         border-radius: 10px;
         border: 1px solid $yellow;
     }
     &__image {
-        width: 98%;
+        width: 75%;
         height: 240px;
         margin: auto;
         border-radius: 5px;
@@ -134,7 +134,7 @@
     border-radius: 3px;
     border: 2px solid $white;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     &:hover {
         background-color: $pink;
         color: $yellow;

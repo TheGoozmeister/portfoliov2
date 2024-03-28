@@ -33,7 +33,7 @@ function Collapse (props: CollapseProps) : JSX.Element {
                             <div className="collapse__main__image"><img src={imgSrc} alt={title} /></div>
                             <div className="collapse__main__image__example">
                                 <div className="example__text">{example}</div>
-                                <div className="example__button">{button}</div>
+                                <a href={link} target="_blank" rel="noopener noreferrer"><div className="example__button">{button}</div></a>
                             </div>
                         </div>
                     )
@@ -42,7 +42,6 @@ function Collapse (props: CollapseProps) : JSX.Element {
                         <div className="example">
                             <div className="collapse__main__image__example">
                                 <div className="example__text">{example}</div>
-                                <div className="example__button">{button}</div>
                             </div>
                             <div className="collapse__main__image"><img src={imgSrc} alt={title} /></div>
                         </div>

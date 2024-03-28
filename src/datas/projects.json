@@ -1,30 +1,33 @@
 [
     {
         "id": 1,
-        "title": "Portfolio",
-        "cover": "portfolio.png",
-        "description": 
-            {
-                "eng" : "New version of Portfolio",
-                "fr" : "Nouvelle version de Portfolio"
-            },       
+        "title": "Beber",
+        "cover": "beber.png",
+        "description": {
+            "eng" : "Full-stack application for event organization",
+            "fr": "Application fullstack d'oranisation d'évènements"
+        },
         "technos": [
             "HTML/CSS",
-            "TYPESCRIPT",
-            "REACT"
+            "JAVASCRIPT",
+            "REACT",
+            "NODEJS",
+            "EXPRESS",
+            "MYSQL"
         ],
-        "tools" : [
+        "tools": [
             "GIT",
-            "DOCKER",
             "SASS",
+            "SILICIUM",
+            "FIGMA",
+            "DOCKER",
             "REDUX"
         ],
-        "summary":
-            {
-                "eng" : "Portfolio project built as a Single Page Application (SPA) using React and Typescript. UI/UX design work was done with Figma. Language selection is managed with Redux. Sass preprocessor was used for all CSS styling.",
-                "fr" : "Projet de portfolio en SPA réalisé en React et Typescript. Le travail d'UI/UX a été réalisé à l'aide de figma. Le choix de la langue est géré avec Redux. Le préprocesseur Sass a été utilisé pour l'ensemble du CSS."
-            },
-        "projectLink" : "https://github.com/TheGoozmeister/portfoliov2"
+        "summary": {
+            "eng" : "Béber is a mobile-first application designed to assist in event organization. It allows multiple users to create and join events, suggest accommodations using links from platforms like Airbnb, and vote on the stay location. The frontend is built with React, the backend with Node.js, and the database with MySQL. Docker was used for deploying the first test version.",
+            "fr": "Béber est une application mobilefirst accompagnatrice d'organisation d'évènements. Elle permet à plusieurs personnes de créer et de rejoindre un évènement, de proposer des logements à partir de liens d'annonces type airbnb, et de voter pour le lieu de séjour. Le front est en React, le back en NodeJS, la base de données en MYSQL. Docker a été utilisé pour le déploiement de la première version de test."
+        },
+        "projectLink" : "https://github.com/TheGoozmeister/b-ber"
     },
     {
         "id": 2,
@@ -120,7 +123,7 @@
         "cover": "portfoliov1.png",
         "description": {
             "eng" : "First version of my portfolio",
-            "fr": "Première version de mon portfolio"
+            "fr": "Premiere version de mon portfolio"
         },
         "technos": [
             "HTML/CSS"
@@ -137,34 +140,32 @@
     },
     {
         "id": 7,
-        "title": "Béber",
-        "cover": "beber.png",
-        "description": {
-            "eng" : "Full-stack application for event organization",
-            "fr": "Application fullstack d'oranisation d'évènements"
-        },
+        "title": "Portfolio",
+        "cover": "portfolio.png",
+        "description": 
+            {
+                "eng" : "New version of Portfolio",
+                "fr" : "Nouvelle version de Portfolio"
+            },       
         "technos": [
             "HTML/CSS",
-            "JAVASCRIPT",
-            "REACT",
-            "NODEJS",
-            "EXPRESS",
-            "MYSQL"
+            "TYPESCRIPT",
+            "REACT"
         ],
-        "tools": [
+        "tools" : [
             "GIT",
-            "SASS",
-            "SILICIUM",
-            "FIGMA",
             "DOCKER",
+            "SASS",
             "REDUX"
         ],
-        "summary": {
-            "eng" : "Béber is a mobile-first application designed to assist in event organization. It allows multiple users to create and join events, suggest accommodations using links from platforms like Airbnb, and vote on the stay location. The frontend is built with React, the backend with Node.js, and the database with MySQL. Docker was used for deploying the first test version.",
-            "fr": "Béber est une application mobilefirst accompagnatrice d'organisation d'évènements. Elle permet à plusieurs personnes de créer et de rejoindre un évènement, de proposer des logements à partir de liens d'annonces type airbnb, et de voter pour le lieu de séjour. Le front est en React, le back en NodeJS, la base de données en MYSQL. Docker a été utilisé pour le déploiement de la première version de test."
-        },
-        "projectLink" : "https://github.com/TheGoozmeister/b-ber"
-    },{
+        "summary":
+            {
+                "eng" : "Portfolio project built as a Single Page Application (SPA) using React and Typescript. UI/UX design work was done with Figma. Language selection is managed with Redux. Sass preprocessor was used for all CSS styling.",
+                "fr" : "Projet de portfolio en SPA réalisé en React et Typescript. Le travail d'UI/UX a été réalisé à l'aide de figma. Le choix de la langue est géré avec Redux. Le préprocesseur Sass a été utilisé pour l'ensemble du CSS."
+            },
+        "projectLink" : "https://github.com/TheGoozmeister/portfoliov2"
+    },
+    {
         "id": 8,
         "title": "OhMyFood",
         "cover": "ohmyfood.png",
@@ -275,7 +276,7 @@
         "projectLink" : "https://github.com/TheGoozmeister/p12"
     },{
         "id": 13,
-        "title": "La Panthère",
+        "title": "La Panthere",
         "cover": "lapanthere.png",
         "description": {
             "eng" : "Optimization of a web design agency",

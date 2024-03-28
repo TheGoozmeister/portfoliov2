@@ -5,8 +5,8 @@ export const backstoryTexts = {
             description : "Holder of a Master's degree in Education Sciences, the transmission of knowledge has always been a major concern in my life. Being self-taught by nature, I have always enjoyed learning and developing my skills in various fields, then sharing them with others using appropriate pedagogy.",
             cover: "go.jpeg",
             example : "As a Dan level Go player for many years, I have learned from others and then passed on my knowledge. I apply this strategic mindset, which combines macro and micro vision, in my daily work.",
-            button: "A little game ?",
-            link: "https://www.gokgs.com/",
+            button: null,
+            link: null,
             isReversed: false,
             icon : '<i class="fa-solid fa-book-open"></i>'
         }, {
@@ -46,8 +46,8 @@ export const backstoryTexts = {
             description : "Titulaire d'un master en Sciences de l'éducation, la transmission du savoir a toujours été un enjeu majeur dans ma vie. De nature autodidacte, j'ai toujours aimé apprendre et développer mes compétences dans différents domaines, puis les transmettre à autrui avec une pédagogie adaptée.",
             cover: "go.jpeg",
             example: "Joueur Dan de Go depuis de nombreuses années, j'ai appris au contact d'autrui pour ensuite transmettre mon savoir. J'applique cet état d'esprit stratégique alliant vision macro et micro dans mon travail quotidien.",
-            button: "Une petite partie ?",
-            link: "https://www.gokgs.com/",
+            button: null,
+            link: null,
             isReversed: false,
             icon : '<i class="fa-solid fa-book-open"></i>'
         }, {

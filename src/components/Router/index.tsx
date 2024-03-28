@@ -10,6 +10,7 @@ import Hardskills from '../../pages/Hardskills/index.tsx';
 import Projects from '../../pages/Projects/index.tsx';
 import Contact from '../../pages/Contact/index.tsx';
 import Softskills from '../../pages/Softskills/index.tsx';
+import Footer from '../Footer/index.tsx';
 
 
 function AppRouter() : JSX.Element {

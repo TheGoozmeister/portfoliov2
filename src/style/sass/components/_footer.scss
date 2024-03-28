@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    background-color: black;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    &__links {
+        display: flex;
+        width: 10%;
+        margin-left: 5%;
+        justify-content: space-between;
+    }
+        &__link {
+            & i{
+                color: $yellow;
+
+            }
+        }
+    
+    &__legal {
+        color: $yellow;
+        @include mainFont;
+        margin-right: 5%;
+        &:hover {
+            color: $pink;
+            cursor: pointer;
+            text-shadow: 1px 1px 1px $yellow;
+        }
+    }
+}

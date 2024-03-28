@@ -6,12 +6,15 @@
     flex-direction: column;
     align-items: center;
     height: 70vh;
+    @include smartphone {
+        width: 100%;
+    }
 }
 
 .pageContainer {
     height: 90%;
     background-color: $pink;
-    width: 100%;
+    width: 90%;
     margin: auto;
     opacity: 90%;
     margin-bottom: 10px;
@@ -19,9 +22,11 @@
     justify-content: space-between;
     border: 1px solid $yellow;
     box-shadow: 2px 2px 2px $yellow;
+    border-radius: 10px;
     @include smartphone {
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
 }
 
@@ -49,12 +54,15 @@
         flex-direction: row;
         flex-wrap: wrap;
         overflow: scroll;
+        justify-content: space-between;
         @include smartphone {
             position: absolute;
             left: 10px;
-            top: 155px;
-            width: 35%;
+            top: 135px;
+            width: 42%;
             overflow: scroll;
+            padding-top: 0;
+            margin-top: 0;
         }
     }
 }
@@ -70,8 +78,8 @@
         height: 40px;
         overflow: scroll;
         position: absolute;
-        left: 10px;
-        top: 115px;
+        right: 0px;
+        top: 0px;
         z-index: 1;
     }
 }
@@ -137,7 +145,7 @@
     margin-bottom: 15px;
     margin-top: 10px;
     @include smartphone {
-        width: 38%;   
+        width: 40%;   
         margin-left: 10px;    
         height: 80px; 
         overflow: scroll;
@@ -159,7 +167,7 @@
     @include smartphone{
         position: absolute;
         font-size: 14px;
-        top: 100px;
+        top: 95px;
         left: 10px;
     }
 }
@@ -190,7 +198,7 @@
         position: absolute;
         right: 20px;
         margin-right: 0px;
-        top: 0px;
+        top: 40px;
     }
 }
 
@@ -199,7 +207,7 @@
         position: absolute;
         right: 20px;
         margin-right: 0px;
-        top: 40px;
+        top: 80px;
     }
 }
 

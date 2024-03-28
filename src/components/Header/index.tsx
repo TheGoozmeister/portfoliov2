@@ -44,6 +44,7 @@ function Header () : JSX.Element {
                     <img src={logo} alt="logo" />
                 </NavLink>
             </div>
+            
             {actualLanguage === "fr" ? 
                 <Flag language="eng" /> 
                 :

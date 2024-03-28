@@ -4,6 +4,8 @@ import { backstoryTexts, backstoryButtonText, softskillsText } from "./text.ts"
 import { useSelector } from "react-redux"
 import { RootState } from "../../store/store.ts"
 import Button from "../../components/Button/index.tsx"
+import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer/index.tsx";
 
 
 function Softskills () : JSX.Element {
@@ -37,9 +39,14 @@ function Softskills () : JSX.Element {
                 </div>
                 <div className="softskills__outro">{moreTexts.outro}</div>
             </div>
-            <Button text={button} link="/hardskills" /> 
+            <div className="retBut">
+                <NavLink to={"/"} className="return">
+                    <i className="fa-solid fa-arrow-left"></i>
+                </NavLink>
+                <Button text={button} link="/hardskills" /> 
+            </div>
+            <Footer />
         </div>
-        
     )
 }
 

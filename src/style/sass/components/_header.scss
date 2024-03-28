@@ -90,11 +90,14 @@ header {
 .burger {
     @include smartphone {
         cursor: pointer;
-    color: $pink;
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    font-size: 36px;
+        color: $yellow;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        font-size: 36px;
+        &:hover {
+            color: $purple;
+        }
     }
     
 }

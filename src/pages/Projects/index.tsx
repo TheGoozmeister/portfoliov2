@@ -9,6 +9,8 @@ import projectsTexts from "./text.ts";
 import DropdownTool from "../../components/DropdownTools/index.tsx";
 import contactTexts from "../Contact/text.ts";
 import Button from "../../components/Button/index.tsx";
+import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer/index.tsx";
 declare var require: any
 const projectsDatas = require('../../datas/projects.json');
 
@@ -44,6 +46,7 @@ function Projects () : JSX.Element {
     
     return (
         <div className="mainContainer">
+            
             <h2>{texts.title}</h2>
             <div className="pageContainer" id="projects">
                 <div className="projectList">
@@ -51,6 +54,11 @@ function Projects () : JSX.Element {
                         {texts.tuto1} <br />
                         {texts.tuto2}
                     </div>
+                    <div className="tags">
+                            {tags.map((tag, index)=> 
+                                <Tag key={index} text={tag} />
+                            )}
+                        </div>
                     <div className="dropdowns">
                         <Dropdown />
                         <DropdownTool />
@@ -59,11 +67,7 @@ function Projects () : JSX.Element {
                         <div className="results">
                             {filteredProjects.length} {texts.results}
                         </div>
-                        <div className="tags">
-                            {tags.map((tag, index)=> 
-                                <Tag key={index} text={tag} />
-                            )}
-                    </div>
+                       
                     </div>
                     <div className="projectList__results">
                         {
@@ -83,7 +87,13 @@ function Projects () : JSX.Element {
                 </div>  
                 <Project />
             </div>
-            <Button text={texts.button} link="/contact" /> 
+            <div className="retBut">
+                <NavLink to={"/hardskills"} className="return">
+                    <i className="fa-solid fa-arrow-left"></i>
+                </NavLink>
+                <Button text={texts.button} link="/contact" /> 
+            </div>
+            <Footer />
         </div> 
     )
 }

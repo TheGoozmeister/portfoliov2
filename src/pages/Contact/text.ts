@@ -6,6 +6,7 @@ const contactTexts = {
         mail: "Your email",
         message: "Your message",
         button: "Send message",
+        confirmed: "Thank you for your message. I will respond to you as soon as possible. See you soon."
     },
     fr: {
         title: "A vent de partir",
@@ -14,6 +15,7 @@ const contactTexts = {
         mail: "Votre mail",
         message: "Votre message",
         button: "Envoyer message",
+        confirmed: "Merci pour votre message. Je vous répondrai dans les meilleurs délais. A bientôt"
     }
 }
 

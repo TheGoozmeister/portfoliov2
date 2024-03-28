@@ -34,7 +34,7 @@ function CardProject (props: CardProps) : JSX.Element {
     if (id===actualId) {
         backgroundImage = `url(${imgSrc})`;
     } else {
-        backgroundImage = `linear-gradient(rgba(37, 17, 42, 0.5), rgba(37, 17, 42, 0.5)), url(${imgSrc})`;// Ajoute une couleur de fond violet avec opacité
+        backgroundImage = `linear-gradient(rgba(37, 17, 42, 0.8), rgba(37, 17, 42, 0.8)), url(${imgSrc})`;// Ajoute une couleur de fond violet avec opacité
 
     }
     const cardStyle = {

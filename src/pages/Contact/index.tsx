@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import contactTexts from "./text.ts";
+import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer/index.tsx";
 
 
 function Contact () : JSX.Element {
@@ -25,7 +27,7 @@ function Contact () : JSX.Element {
             to_email: "vincent.pastor.pro@gmail.com",
             from_name: formData.name,
             from_email: formData.email,
-            message: formData.message,
+            message: formData.message + formData.email + formData.name,
         })
         .then(function() {
             console.log('SUCCESS')
@@ -47,13 +49,14 @@ function Contact () : JSX.Element {
     return (
         <div>
             <div className="mainContainer">
+                
                 <h2>{texts.title}</h2>
                 <div className="rgpd">
                     {texts.rgpd}
                 </div>
                 {mailSent ? 
-                    <div className="mailConfirmed">
-
+                    <div className="rgpd">
+                        {texts.confirmed}
                     </div>
                     :
                     <form className="form" onSubmit={sendEmail}>
@@ -69,7 +72,13 @@ function Contact () : JSX.Element {
                             <label className="label" htmlFor="message">{texts.message}</label>
                             <textarea className="input"name="message" id="message" value={formData.message} onChange={handleChange} />
                         </div>
-                        <button className="button form__button" type="submit" id="sendBtn">{texts.button}</button>
+                        <div className="retBut">
+                            <NavLink to={"/projects"} className="return">
+                                <i className="fa-solid fa-arrow-left"></i>
+                            </NavLink>
+                            <button className="button form__button" type="submit" id="sendBtn">{texts.button}</button>
+                        </div>
+                        <Footer />
                     </form>
                 }
             </div>

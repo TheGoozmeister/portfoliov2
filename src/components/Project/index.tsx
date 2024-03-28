@@ -66,9 +66,12 @@ function Project () : JSX.Element {
                 </div>
                 
             </div>
-            <div id="bttProject">
-                {text} <i className="fa-brands fa-github"></i>
-            </div>
+            <a href={project.projectLink} target="_blank" rel="noreferrer">
+                <div id="bttProject">
+                    {text} <i className="fa-brands fa-github"></i>
+                </div>
+            </a>
+            
             
         </div>
     )

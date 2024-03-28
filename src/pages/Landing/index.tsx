@@ -5,6 +5,7 @@ import Flag from "../../components/Flag/index.tsx";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store.ts";
 import landingTexts from "./text.ts";
+import Footer from "../../components/Footer/index.tsx";
 declare var require: any
 const sound = require("../../assets/sounds/shonen.mp3");
 
@@ -17,11 +18,6 @@ function Landing () : JSX.Element {
 
     return (
         <div className="landing">
-            {/* <ReactAudioPlayer 
-                id="mainSound"
-                src={sound}
-                autoPlay={true}
-            /> */}
             <h1>{texts.title}</h1>
             <div className="landing__main">
                 <div className="landing__main__presentation">
@@ -32,16 +28,11 @@ function Landing () : JSX.Element {
                     <div className="landing__main__presentation__button">                          
                         <Button text={texts.button} link="/softskills" />
                     </div>
+                    
                 </div>
-                {/* <div className="landing__setup">
-                    <div className="landing__setup__label">
-                        {texts.setup}
-                    </div>
-                    <div className="landing__setup__flags">
-                        <Flag language="fr" />
-                        <Flag language="eng" />
-                    </div>
-                </div> */}
+            </div>
+            <div id="footerProblem">
+                <Footer />
             </div>
         </div> 
     )

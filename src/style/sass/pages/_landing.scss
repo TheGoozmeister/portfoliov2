@@ -1,7 +1,13 @@
 .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
     @include smartphone {
         margin-top: 70px;
         margin-bottom: 30px;
+        height: 370px;
     }
     &__main {
         display: flex;
@@ -14,26 +20,31 @@
         &__presentation {
             width: 90%;
             margin: auto;
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             height: 420px;
+            text-align: center;
             @include smartphone {
-                width: 100%;
+                width: 80%;
                 margin: auto;
                 height: 150px;
+                margin-top: 70px;
             }
             &__text{
                 @include mainFont;
-                color: $white;
+                color: $yellow;
                 text-align: justify;
-                width: 20%;
+                width: 30%;
                 @include smartphone {
                     width: 100%;
-                    font-size: 12px;
+                    font-size: 10px;
                     text-align: center;
+                    text-shadow: 1px 1px 1px $yellow;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 20px;
+                    margin-top: 25px;
                     margin-bottom: 10px;
                     justify-content: space-between;
                 }
@@ -42,12 +53,12 @@
                 display: flex;
                 justify-content: start;
                 align-items: center;
-                margin-top: 60px;
+                margin-top: 200px;
                 @include smartphone {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-top: 180px;
+                    margin-top: -15px;
                 }
             }
         }
@@ -72,22 +83,53 @@
 
 h1 {
     color: $white;
-    width: 65%;
-    margin-left: 10%;
-    margin-bottom: 190px;
+    width: 75%;
+    text-shadow: 2px 2px 2px $yellow;
+
+    margin-bottom: 10px;
     font-size: 46px;
     font-weight: 400;
     font-family: 'Lexend Zetta', sans-serif;
+    text-align: center;
     @include smartphone {
-        font-size: 30px;
-        margin-top: 10px;
+        font-size: 26px;
+        margin-top: 5px;
         margin-bottom: 20px;
+        margin-left: 10px;
+        text-align: center;
+        width: 95%;
+        text-shadow: 2px 2px 2px $yellow;
 
     }
 }
 
 .presentationText__2{
-    margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px $pink;
+
+    @include smartphone {
+        margin-top: 175px;
+    }
 }
 
+.presentationText__1{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px $pink;
+
+    @include smartphone {
+        margin-top: 20px;
+
+    }
+}
+
+
+#footerProblem {
+    width: 105%;
+    margin: auto;
+    position: absolute;
+    top : 700px;
+    left: 0;
+}
