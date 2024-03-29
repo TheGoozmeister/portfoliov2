@@ -64,6 +64,21 @@
             margin-top: 10px;
         }
     }
+    &__checkbox {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        &__label {
+            @include mainFont;
+            color: $yellow;
+            padding-left: 20px;
+        }
+        &__agree {
+            @include textFont;
+            color: $pink;
+        }
+    }
 }
 
 #message {

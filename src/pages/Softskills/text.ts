@@ -62,7 +62,7 @@ export const backstoryTexts = {
         },
         {
             title: "Organisation",
-            description : "Que ce soit dans la préparation des cours ou l'organisation d'un tournage, j'ai développé une vision globale d'un projet, en prêtant attention à tous les stades de développement de celui-ci. Connaître les enjeux de chaque poste est pour moi une nécessité pour réaliser ses propres tâches, afin d'inclure mon travail en temps et en heure dans une dynamique globale.",
+            description : "Que ce soit dans la préparation des cours ou l'organisation d'un tournage, j'ai développé une vision globale d'un projet, en prêtant attention à tous les stades de développement de celui-ci. Connaître les enjeux de chaque poste est pour moi une nécessité pour réaliser ses propres tâches, afin d'inclure mon travail en fonction des contraintes de deadline et dans une dynamique globale.",
             cover: "novisad.jpeg",
             example: "Durant un an, j'ai été professeur de français et de musique à Novi Sad en Serbie, tout en réalisant par correspondance un master 2 de sciences de l'éducation. ",
             button: null,

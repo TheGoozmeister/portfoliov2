@@ -58,8 +58,8 @@
         "title": "Billed",
         "cover": "billed.png",
         "description": {
-            "eng" : "",
-            "fr": ""
+            "eng" : "Testing of a human resources application",
+            "fr": "Test d'une application de ressources humaines"
         },
         "technos": [
             "HTML/CSS",
@@ -70,8 +70,8 @@
             "JEST"
         ],
         "summary": {
-            "eng" : "",
-            "fr": ""
+            "eng" : "Human resources application to debug and test. Unit tests and End-to-End tests have been implemented using Jest.",
+            "fr": "Application de ressources humaines à débugguer et à tester. La mise en place de test unitaires et de tests End to End on été mis en place, en utilisant Jest."
         },
         "projectLink" : "https://github.com/TheGoozmeister/p9"
     },{
@@ -335,5 +335,26 @@
             "fr": "Site vitrine de propositions de logements. C'est le premier projet en HTML/CSS que j'ai réalisé."
         },
         "projectLink" : "https://github.com/TheGoozmeister/p2"
+    },{
+        "id": 16,
+        "title": "Piiquante",
+        "cover": "piiquante.png",
+        "description": {
+            "eng" : "Sauce sharing API",
+            "fr": "API de partage de sauces"
+        },
+        "technos": [
+            "NODEJS",
+            "EXPRESS"
+        ],
+        "tools" : [
+            "GIT",
+            "MONGODB"
+        ],
+        "summary": {
+            "eng" : "Development of a secure API with password hashing and token usage. The entire system was developed using NodeJS and Express, utilizing MongoDB as the database.",
+            "fr": "Développement d'une API sécurisé avec hachage des mots de passe et utilisations de tokens. L'ensemble a été développé avec NodeJS et Express, en utilisant MONGODB comme database."
+        },
+        "projectLink" : "https://github.com/TheGoozmeister/HotTakes"
     }
 ]

@@ -5,6 +5,7 @@ body {
     background-position: center;
     height: 100vh; 
     margin: 0;
+    
 }
 
 h2 {
@@ -40,12 +41,16 @@ a {text-decoration: none;}
 }
 
 .retBut {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: baseline;
-    margin-bottom: -5px;
-}
+    
+    @include smartphone {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: baseline;
+        margin-bottom: -5px;
+    }
+}   
+    
 
 #sendBtn {
     margin-left: -5%;

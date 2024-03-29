@@ -1,14 +1,15 @@
 footer {
     display: flex;
-    background-color: black;
-    width: 98%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: black;
 }
 
 .footer {
+    position: relative;
     &__links {
         display: flex;
         width: 10%;
@@ -31,5 +32,22 @@ footer {
             cursor: pointer;
             text-shadow: 1px 1px 1px $yellow;
         }
+    }
+    &__fullLegal {
+        
+        background-color: black;
+        
+
+        
+        @include textFont;
+        width: 35%;
+        color: $yellow;
+        border-bottom: none;
+        @include smartphone {
+            font-size: 10px;
+            bottom: 75px;
+            right: 5%;
+            width: 70%;
+        }   
     }
 }

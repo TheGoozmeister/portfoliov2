@@ -127,9 +127,14 @@ h1 {
 
 
 #footerProblem {
-    width: 105%;
+    width: 100%;
     margin: auto;
     position: absolute;
-    top : 700px;
+    top: 900px;
     left: 0;
+    @include smartphone {
+        top : 700px;
+        width: 100%;
+
+    }
 }
